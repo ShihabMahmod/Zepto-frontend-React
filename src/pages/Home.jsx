@@ -36,17 +36,18 @@ const Home = () => {
 
   return (
     <div className='container m-auto text-center items-center'>
-      <h2 className='text-left'>Font List</h2>
+      <h1 className='text-start text-xl '>Our Fonts</h1>
+      <h5 className='text-start mb-5'>Browse a list of zepto fonts to list your fonts group</h5>
       <div>
        
         <table className="min-w-full bg-white border border-gray-200 ">
         <thead>
           <tr className="w-full bg-gray-100">
             <th className="px-6 py-3 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-600 uppercase">
-              Name
+              Font Name
             </th>
             <th className="px-6 py-3 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-600 uppercase">
-              Age
+              Preview
             </th>
             <th className="px-6 py-3 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-600 uppercase">
               Action

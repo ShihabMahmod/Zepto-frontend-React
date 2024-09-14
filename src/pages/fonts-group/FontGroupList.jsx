@@ -31,7 +31,8 @@ const FontGroupList = () => {
 
   return (
     <div className='container m-auto text-center items-center'>
-      <h2 className='text-left'>Font List</h2>
+      <h2 className='text-left text-xl font-bold'>Our Font Groups</h2>
+      <h5 className='text-left mb-5'>List of all availeable groups</h5>
       <div>
        
         <table className="min-w-full bg-white border border-gray-200 ">
@@ -41,7 +42,7 @@ const FontGroupList = () => {
               Name
             </th>
             <th className="px-6 py-3 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-600 uppercase">
-              Group
+              Fonts
             </th>
             <th className="px-6 py-3 border-b-2 border-gray-300 text-left text-sm font-semibold text-gray-600 uppercase">
               Action
@@ -55,7 +56,7 @@ const FontGroupList = () => {
             {item.group_name}
             </td>
             <td className="px-6 py-4 text-left border-b border-gray-200 text-sm">
-              {item.font_names}
+              {item.custom_names}
             </td>
              <td className="px-6 py-4 text-left border-b border-gray-200 text-sm">
                 <Link to={`/edit-group/${item.id}`} className="text-blue-600 hover:text-blue-900 mr-4">
